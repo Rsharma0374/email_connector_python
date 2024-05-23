@@ -1,5 +1,5 @@
 # email_connector_python
-
+#need python3
 
 To run the project follow below
 
@@ -10,3 +10,4 @@ pip install -r requirements.txt
 pip3 install Flask-Mail
 pip3 install flask-restful
 pip3 install Flask
+
