@@ -36,9 +36,9 @@ class SendEmail(Resource):
 
         try:
             mail.send(msg)
-            return jsonify({"message": "Email sent successfully!"})
+            return jsonify({"message": "Email sent successfully!", "status": 200})
         except Exception as e:
-            return jsonify({"message": "Failed to send email", "error": str(e)})
+            return jsonify({"message": "Failed to send email", "error": str(e), "status": 500})
 
 api.add_resource(SendEmail, '/send-email')
 
